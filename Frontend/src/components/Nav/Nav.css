@@ -1,0 +1,40 @@
+/* nav.css */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .nav.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .nav.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .toggle-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav.light-mode .toggle-btn {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .nav.dark-mode .toggle-btn {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
