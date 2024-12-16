@@ -1,0 +1,142 @@
+/* Contenedor principal del formulario de login */
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    margin: 150px auto;
+    max-width: 400px;
+    background-color: #7b3d50;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 1s;
+}
+
+/* Estilos para los inputs */
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #994e69;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover y focus en los inputs */
+#login-form input:hover,
+#login-form input:focus {
+    border-color: #ffabc6;
+    box-shadow: 0 0 5px #ffabc6;
+}
+
+/* Botón de iniciar sesión */
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ffabc6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.3s;
+}
+
+/* Hover y active en el botón */
+#login-form button:hover {
+    background-color: #b36580;
+    transform: scale(1.05);
+}
+
+#login-form button:active {
+    background-color: #7b3d50;
+    transform: scale(0.95);
+}
+
+/* Tema claro */
+body.light #login-form {
+    background-color: #994e69;
+}
+
+body.light #login-form input {
+    border-color: white;
+}
+
+body.light #login-form button {
+    background-color: #ffabc6;
+    color: black;
+}
+
+/* Tema oscuro */
+body.dark #login-form {
+    background-color: #ffabc6;
+}
+
+body.dark #login-form input {
+    border-color: #7b3d50;
+}
+
+body.dark #login-form button {
+    background-color: #994e69;
+    color: white;
+}
+
+/* Título del login */
+#label-login {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+body.light #label-login {
+    color: white;
+}
+
+body.dark #label-login {
+    color: black;
+}
+
+/* Contenedor del texto de registro */
+#register-prompt {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Tema claro para el texto */
+body.light #register-prompt {
+    color: white;
+}
+
+/* Tema oscuro para el texto */
+body.dark #register-prompt {
+    color: black;
+}
+
+/* Estilo del enlace de registro */
+#register-link {
+    color: #ffabc6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover con cambio de color y tamaño */
+#register-link:hover {
+    color: #b36580;
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Active para restablecer el tamaño */
+#register-link:active {
+    transform: scale(1);
+    color: #7b3d50;
+}

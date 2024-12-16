@@ -1,11 +1,47 @@
-.footer {
-    background-color: #333333;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .footer p {
-    margin: 0;
-  }
+footer {
+  background-color: #cc7c97;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+footer div {
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer div:first-child{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* Estilos para temas */
+body.light footer {
+  background-color: #994e69;
+}
+
+body.dark footer {
+  background-color: #ffabc6;
+}
+
+body.light footer a, body.light footer div p {
+  color: white;
+}
+
+body.dark footer a, body.dark footer div p {
+  color: rgb(0, 0, 0);
+}
+
+body.light footer div:first-child{
+  border-bottom: #ffabc6 solid 1px;
+}
+
+body.dark footer div:first-child{
+  border-bottom: #994e69 solid 1px;
+}

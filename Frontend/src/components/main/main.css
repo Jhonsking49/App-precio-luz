@@ -1,0 +1,94 @@
+#main {
+    flex: 1; /* Para que se ajuste al espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal de bienvenida */
+#welcome-container {
+    text-align: center;
+    padding: 40px;
+    margin: 30px auto;
+    background-color: #7b3d5057; 
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 750px;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1.5s ease-in-out;
+    line-height: 1.8;
+    transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+/* Estilos para temas */
+body.dark #welcome-container {
+    background-color: #ffabc6; 
+    color: #4a1d2f; 
+}
+
+
+/* Título llamativo */
+#welcome-container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #7b3d50;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1.2px;
+}
+
+/* Texto descriptivo */
+#welcome-container p {
+    font-size: 18px;
+    margin: 15px 0;
+    line-height: 1.8; 
+    color: #7b3d50;
+}
+
+/* Texto destacado */
+#welcome-container p strong {
+    font-size: 22px;
+    color: #7b3d50;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Efecto de entrada */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Separación sutil entre líneas de párrafos */
+#welcome-container p + p {
+    margin-top: 20px;
+}
+
+/* Ajustes en pantallas más pequeñas */
+@media (max-width: 600px) {
+    #welcome-container {
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    #welcome-container h1 {
+        font-size: 28px;
+    }
+
+    #welcome-container p {
+        font-size: 16px;
+    }
+
+    #welcome-container p strong {
+        font-size: 18px;
+    }
+}

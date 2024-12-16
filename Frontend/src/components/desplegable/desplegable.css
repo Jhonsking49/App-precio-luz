@@ -1,0 +1,67 @@
+/* Contenedor del selector */
+#selector-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    gap: 15px; 
+    background-color: #7b3d506c;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 10px; 
+    padding: 25px;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Etiqueta */
+#selector-container label {
+    font-size: 16px;
+    font-weight: bold; 
+    color: #ffffff;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 5px;
+}
+
+/* Selector */
+#selector-container select {
+    width: 100%; 
+    padding: 12px; 
+    font-size: 14px;
+    font-weight: bold;
+    color: #7b3d50; 
+    background: #fff;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    outline: none; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover y Focus en selectores */
+#selector-container select:hover,
+#selector-container select:focus {
+    border-color: #925165; 
+    color: #926873; 
+}
+
+/* Botón */
+#selector-container button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #7b3d50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+
+}
+
+
+#selector-container button:hover {
+    background: #925165; 
+
+}

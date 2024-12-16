@@ -1,0 +1,16 @@
+.card-body{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    transition: 1s;
+}
+
+.card-body:hover{
+   background-color: #86636a;
+   transition: 1s;
+   border-radius: 5px;
+   transform: scale(1.1);
+    padding: 5px;
+    border-bottom:none;
+}
