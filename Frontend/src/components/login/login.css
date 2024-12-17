@@ -8,10 +8,10 @@
     padding: 40px;
     margin: 150px auto;
     max-width: 400px;
-    background-color: #7b3d50;
+    background-color: #4A90E2; /* Azul Claro */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 1s;
+    transition: background-color 0.5s ease, box-shadow 0.3s ease;
 }
 
 /* Estilos para los inputs */
@@ -19,7 +19,7 @@
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #994e69;
+    border: 1px solid #34D399; /* Verde Menta */
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
@@ -28,8 +28,8 @@
 /* Hover y focus en los inputs */
 #login-form input:hover,
 #login-form input:focus {
-    border-color: #ffabc6;
-    box-shadow: 0 0 5px #ffabc6;
+    border-color: #FFD700; /* Amarillo Dorado */
+    box-shadow: 0 0 5px #FFD700;
 }
 
 /* Botón de iniciar sesión */
@@ -39,49 +39,49 @@
     font-size: 16px;
     font-weight: bold;
     color: white;
-    background-color: #ffabc6;
+    background-color: #F78DA7; /* Rosa Claro */
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.5s, transform 0.3s;
+    transition: background-color 0.5s ease, transform 0.3s;
 }
 
 /* Hover y active en el botón */
 #login-form button:hover {
-    background-color: #b36580;
+    background-color: #FFB6C1; /* Rosa Pastel */
     transform: scale(1.05);
 }
 
 #login-form button:active {
-    background-color: #7b3d50;
+    background-color: #D44D5C; /* Rojo Coral */
     transform: scale(0.95);
 }
 
 /* Tema claro */
 body.light #login-form {
-    background-color: #994e69;
+    background-color: #34D399; /* Verde Menta */
 }
 
 body.light #login-form input {
-    border-color: white;
+    border-color: #4A90E2; /* Azul Claro */
 }
 
 body.light #login-form button {
-    background-color: #ffabc6;
+    background-color: #FFD700; /* Amarillo Dorado */
     color: black;
 }
 
 /* Tema oscuro */
 body.dark #login-form {
-    background-color: #ffabc6;
+    background-color: #FFD700; /* Amarillo Dorado */
 }
 
 body.dark #login-form input {
-    border-color: #7b3d50;
+    border-color: #F78DA7; /* Rosa Claro */
 }
 
 body.dark #login-form button {
-    background-color: #994e69;
+    background-color: #4A90E2; /* Azul Claro */
     color: white;
 }
 
@@ -89,17 +89,18 @@ body.dark #login-form button {
 #label-login {
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     margin-bottom: 10px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 body.light #label-login {
-    color: white;
+    color: #FFFFFF;
 }
 
 body.dark #label-login {
-    color: black;
+    color: #000000;
 }
 
 /* Contenedor del texto de registro */
@@ -107,23 +108,23 @@ body.dark #label-login {
     margin-top: 20px;
     font-size: 18px;
     text-align: center;
-    color: white;
+    color: #FFFFFF;
     transition: color 0.3s ease-in-out;
 }
 
 /* Tema claro para el texto */
 body.light #register-prompt {
-    color: white;
+    color: #FFD700; /* Amarillo Dorado */
 }
 
 /* Tema oscuro para el texto */
 body.dark #register-prompt {
-    color: black;
+    color: #4A90E2; /* Azul Claro */
 }
 
 /* Estilo del enlace de registro */
 #register-link {
-    color: #ffabc6;
+    color: #F78DA7; /* Rosa Claro */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -131,12 +132,12 @@ body.dark #register-prompt {
 
 /* Hover con cambio de color y tamaño */
 #register-link:hover {
-    color: #b36580;
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    color: #D44D5C; /* Rojo Coral */
+    transform: scale(1.1);
 }
 
 /* Active para restablecer el tamaño */
 #register-link:active {
     transform: scale(1);
-    color: #7b3d50;
+    color: #FFB6C1; /* Rosa Pastel */
 }

@@ -5,13 +5,13 @@
     align-items: center;
     margin: 20px auto;
     gap: 15px; 
-    background-color: #7b3d506c;
-    border: 1px solid rgba(255, 255, 255, 0.2); 
+    background-color: #F9FAFC; /* Blanco Nieve */
+    border: 1px solid #D1D5DB; /* Gris Suave */
     border-radius: 10px; 
     padding: 25px;
     max-width: 400px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
-    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    color: #4A90E2; /* Azul Claro */
     font-family: 'Arial', sans-serif;
 }
 
@@ -19,8 +19,8 @@
 #selector-container label {
     font-size: 16px;
     font-weight: bold; 
-    color: #ffffff;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5); 
+    color: #4A90E2; /* Azul Claro */
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); 
     margin-bottom: 5px;
 }
 
@@ -30,9 +30,9 @@
     padding: 12px; 
     font-size: 14px;
     font-weight: bold;
-    color: #7b3d50; 
-    background: #fff;
-    border: 1px solid #ccc; 
+    color: #4A90E2; /* Azul Claro */
+    background: #FFFFFF; /* Fondo blanco */
+    border: 1px solid #D1D5DB; /* Gris Suave */
     border-radius: 8px; 
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
     outline: none; 
@@ -42,8 +42,8 @@
 /* Hover y Focus en selectores */
 #selector-container select:hover,
 #selector-container select:focus {
-    border-color: #925165; 
-    color: #926873; 
+    border-color: #FFD700; /* Amarillo Dorado */
+    box-shadow: 0px 4px 8px rgba(255, 215, 0, 0.3); /* Amarillo Dorado */
 }
 
 /* Botón */
@@ -51,17 +51,49 @@
     padding: 10px 20px;
     font-size: 14px;
     font-weight: bold;
-    color: #ffffff;
-    background: #7b3d50;
+    color: #FFFFFF; /* Texto blanco */
+    background: #34D399; /* Verde Menta */
     border: none;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 #selector-container button:hover {
-    background: #925165; 
+    background: #2FAA85; /* Verde más oscuro */
+    box-shadow: 0px 4px 12px rgba(52, 211, 153, 0.4);
+}
 
+/* Contenedor de tarjetas (opcional si se necesita para consistencia) */
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: #FFFFFF; /* Fondo blanco */
+    border: 1px solid #D1D5DB; /* Gris Suave */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+}
+
+.card h3 {
+    color: #4A90E2; /* Azul Claro */
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #D1D5DB; /* Gris Suave */
+}
+
+.card .highlight {
+    color: #FFD700; /* Amarillo Dorado */
+    font-weight: bold;
 }

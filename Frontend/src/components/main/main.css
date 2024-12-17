@@ -11,7 +11,7 @@
     text-align: center;
     padding: 40px;
     margin: 30px auto;
-    background-color: #7b3d5057; 
+    background-color: #4A90E2; /* Azul Claro */
     border-radius: 20px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     max-width: 750px;
@@ -19,23 +19,37 @@
     animation: fadeIn 1.5s ease-in-out;
     line-height: 1.8;
     transition: background-color 0.5s ease, color 0.5s ease; 
+    color: #FFFFFF; /* Blanco para el texto */
 }
 
 /* Estilos para temas */
 body.dark #welcome-container {
-    background-color: #ffabc6; 
-    color: #4a1d2f; 
+    background-color: #FFD700; /* Amarillo Dorado */
+    color: #4A1D2F; /* Rojo Oscuro */
 }
 
+body.light #welcome-container {
+    background-color: #34D399; /* Verde Menta */
+    color: #FFFFFF; /* Blanco */
+}
 
 /* Título llamativo */
 #welcome-container h1 {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #7b3d50;
+    color: #FFD700; /* Amarillo Dorado */
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
     letter-spacing: 1.2px;
+    transition: color 0.3s ease;
+}
+
+body.dark #welcome-container h1 {
+    color: #4A90E2; /* Azul Claro */
+}
+
+body.light #welcome-container h1 {
+    color: #FFFFFF; /* Blanco */
 }
 
 /* Texto descriptivo */
@@ -43,17 +57,35 @@ body.dark #welcome-container {
     font-size: 18px;
     margin: 15px 0;
     line-height: 1.8; 
-    color: #7b3d50;
+    color: #FFFFFF; /* Blanco */
+    transition: color 0.3s ease;
+}
+
+body.dark #welcome-container p {
+    color: #4A1D2F; /* Rojo Oscuro */
+}
+
+body.light #welcome-container p {
+    color: #FFD700; /* Amarillo Dorado */
 }
 
 /* Texto destacado */
 #welcome-container p strong {
     font-size: 22px;
-    color: #7b3d50;
+    color: #FFD700; /* Amarillo Dorado */
     font-weight: bold;
     display: block;
     margin-top: 15px;
     text-align: center;
+    transition: color 0.3s ease;
+}
+
+body.dark #welcome-container p strong {
+    color: #4A90E2; /* Azul Claro */
+}
+
+body.light #welcome-container p strong {
+    color: #34D399; /* Verde Menta */
 }
 
 /* Efecto de entrada */

@@ -1,9 +1,12 @@
+/* Estilo general del footer */
 footer {
-  background-color: #cc7c97;
+  background-color: #4A90E2; /* Azul Claro */
   align-items: center;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: #FFFFFF; /* Texto blanco */
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); /* Sombra superior */
 }
 
 footer div {
@@ -16,32 +19,52 @@ footer div {
   margin-bottom: 10px;
 }
 
-footer div:first-child{
+footer div:first-child {
   padding-bottom: 10px;
   padding-top: 10px;
+  border-bottom: 1px solid #D1D5DB; /* Gris Suave */
 }
 
-/* Estilos para temas */
+/* Temas claros y oscuros */
 body.light footer {
-  background-color: #994e69;
+  background-color: #34D399; /* Verde Menta */
 }
 
 body.dark footer {
-  background-color: #ffabc6;
+  background-color: #FFD700; /* Amarillo Dorado */
 }
 
+/* Texto y enlaces en temas claros */
 body.light footer a, body.light footer div p {
-  color: white;
+  color: #FFFFFF; /* Texto blanco */
 }
 
+/* Texto y enlaces en temas oscuros */
 body.dark footer a, body.dark footer div p {
-  color: rgb(0, 0, 0);
+  color: #000000; /* Texto negro */
 }
 
-body.light footer div:first-child{
-  border-bottom: #ffabc6 solid 1px;
+/* Borde inferior en temas claros */
+body.light footer div:first-child {
+  border-bottom: 1px solid #FFD700; /* Amarillo Dorado */
 }
 
-body.dark footer div:first-child{
-  border-bottom: #994e69 solid 1px;
+/* Borde inferior en temas oscuros */
+body.dark footer div:first-child {
+  border-bottom: 1px solid #34D399; /* Verde Menta */
+}
+
+/* Hover para enlaces */
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+body.light footer a:hover {
+  color: #FFD700; /* Amarillo Dorado */
+}
+
+body.dark footer a:hover {
+  color: #34D399; /* Verde Menta */
 }

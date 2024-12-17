@@ -1,16 +1,32 @@
-.card-body{
-    color: white;
+/* Cuerpo de la tarjeta */
+.card-body {
+    color: #FFFFFF; /* Blanco */
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid white;
-    transition: 1s;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #FFD700; /* Amarillo Dorado */
+    transition: background-color 0.5s ease, transform 0.3s ease, border-radius 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
 }
 
-.card-body:hover{
-   background-color: #86636a;
-   transition: 1s;
-   border-radius: 5px;
-   transform: scale(1.1);
-    padding: 5px;
-    border-bottom:none;
+/* Hover en el cuerpo de la tarjeta */
+.card-body:hover {
+    background-color: #4A90E2; /* Azul Claro */
+    color: #FFFFFF; /* Blanco */
+    border-radius: 10px; /* Bordes más redondeados al hacer hover */
+    transform: scale(1.05); /* Efecto de crecimiento */
+    padding: 12px; /* Mayor padding para dar un efecto suave */
+    border-bottom: none; /* Eliminar borde inferior en hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
+    transition: background-color 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+}
+
+/* Interactividad adicional para un clic (opcional) */
+.card-body:active {
+    background-color: #34D399; /* Verde Menta */
+    transform: scale(0.98); /* Pequeña reducción al hacer clic */
+    transition: transform 0.1s ease;
 }

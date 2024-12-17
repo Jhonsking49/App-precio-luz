@@ -1,40 +1,83 @@
 /* nav.css */
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    font-family: Arial, sans-serif;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .nav.light-mode {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  
-  .nav.dark-mode {
-    background-color: #333333;
-    color: #ffffff;
-  }
-  
-  .toggle-btn {
-    padding: 5px 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .nav.light-mode .toggle-btn {
-    background-color: #000000;
-    color: #ffffff;
-  }
-  
-  .nav.dark-mode .toggle-btn {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Modo claro */
+.nav.light-mode {
+  background-color: #4A90E2; /* Azul Claro */
+  color: #FFFFFF; /* Blanco */
+  border: 1px solid #34D399; /* Verde Menta */
+}
+
+.nav.light-mode a {
+  color: #FFD700; /* Amarillo Dorado */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav.light-mode a:hover {
+  color: #FFFFFF; /* Blanco */
+}
+
+/* Modo oscuro */
+.nav.dark-mode {
+  background-color: #FFD700; /* Amarillo Dorado */
+  color: #4A1D2F; /* Rojo Oscuro */
+  border: 1px solid #4A1D2F;
+}
+
+.nav.dark-mode a {
+  color: #4A1D2F; /* Rojo Oscuro */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav.dark-mode a:hover {
+  color: #4A90E2; /* Azul Claro */
+}
+
+/* Botón de cambio de tema */
+.toggle-btn {
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón en modo claro */
+.nav.light-mode .toggle-btn {
+  background-color: #FFD700; /* Amarillo Dorado */
+  color: #4A1D2F; /* Rojo Oscuro */
+}
+
+.nav.light-mode .toggle-btn:hover {
+  background-color: #34D399; /* Verde Menta */
+  color: #FFFFFF; /* Blanco */
+  transform: scale(1.05);
+}
+
+/* Botón en modo oscuro */
+.nav.dark-mode .toggle-btn {
+  background-color: #4A1D2F; /* Rojo Oscuro */
+  color: #FFD700; /* Amarillo Dorado */
+}
+
+.nav.dark-mode .toggle-btn:hover {
+  background-color: #4A90E2; /* Azul Claro */
+  color: #FFFFFF; /* Blanco */
+  transform: scale(1.05);
+}
